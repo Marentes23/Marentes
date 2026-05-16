@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marentes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top shadow-sm">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold" href="#">
+      <img src="./assets/img/logo.png"
+           alt="Marentes"
+           style="height: 40px; object-fit: contain;">
+    </a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contenido">Contenido</a></li>
+        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="inicio" class="hero d-flex align-items-center text-center text-white">
+  <div class="container">
+    <h1 class="display-2 fw-bold">MARENTES</h1>
+    <p class="lead">Contenido multimedia • Gaming • Creación digital</p>
+    <a href="#contenido" class="btn btn-outline-light mt-3">Explorar</a>
+  </div>
+</section>
+
+<!-- CONTENIDO -->
+<section id="contenido" class="section py-5">
+  <div class="container">
+
+    <h2 class="text-center fw-bold mb-5">Contenido</h2>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- VIDEO 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card wix-card border-0 h-100 video-card"
+             data-bs-toggle="modal" data-bs-target="#videoModal1"
+             style="cursor: pointer;">
+          <div class="video-thumbnail position-relative overflow-hidden rounded-top">
+            <img src="https://img.youtube.com/vi/hhfsjvlyKKM/maxresdefault.jpg"
+                 class="video-thumb-img" alt="Video 1">
+            <div class="play-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+              <div class="play-circle">▶</div>
+            </div>
+          </div>
+          <div class="card-body text-center px-3 pt-3 pb-4">
+            <span class="badge bg-secondary mb-2">Yeshualetter</span>
+            <h5 class="fw-bold mb-1">God, I'm not okay.</h5>
+            <p class="text-muted small mb-0">Contenido emocional · Gaming</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIDEO 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card wix-card border-0 h-100 video-card"
+             data-bs-toggle="modal" data-bs-target="#videoModal2"
+             style="cursor: pointer;">
+          <div class="video-thumbnail position-relative overflow-hidden rounded-top">
+            <img src="https://img.youtube.com/vi/9Aq17woe_6M/maxresdefault.jpg"
+                 class="video-thumb-img" alt="Video 2">
+            <div class="play-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+              <div class="play-circle">▶</div>
+            </div>
+          </div>
+          <div class="card-body text-center px-3 pt-3 pb-4">
+            <span class="badge bg-secondary mb-2">Marentes</span>
+            <h5 class="fw-bold mb-1">Video destacado</h5>
+            <p class="text-muted small mb-0">Redes sociales · Creación digital</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIDEO 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card wix-card border-0 h-100 video-card"
+             data-bs-toggle="modal" data-bs-target="#videoModal3"
+             style="cursor: pointer;">
+          <div class="video-thumbnail position-relative overflow-hidden rounded-top">
+            <img src="https://img.youtube.com/vi/cgyccd9LZOk/maxresdefault.jpg"
+                 class="video-thumb-img" alt="Video 3">
+            <div class="play-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+              <div class="play-circle">▶</div>
+            </div>
+          </div>
+          <div class="card-body text-center px-3 pt-3 pb-4">
+            <span class="badge bg-secondary mb-2">Yeshualetter</span>
+            <h5 class="fw-bold mb-1">God, I'm not okay.</h5>
+            <p class="text-muted small mb-0">Proyecto creativo · Contenido digital</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MODAL VIDEO 1 -->
+<div class="modal fade" id="videoModal1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content video-modal-content">
+
+      <button type="button" class="modal-close-btn"
+              data-bs-dismiss="modal" aria-label="Cerrar">✕</button>
+
+      <div class="modal-body p-0">
+        <div class="row g-0">
+
+          <div class="col-lg-8 bg-black">
+            <div class="ratio ratio-16x9">
+              <iframe src="" id="iframe1" title="God, I'm not okay."
+                      allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-4 video-modal-info">
+            <h5 class="video-modal-title">God, I'm not okay.</h5>
+            <p class="video-modal-channel">Yeshualetter · 04:33</p>
+            <p class="video-modal-desc">
+              Even when you can't carry yourself, He's carrying you.
+            </p>
+            <hr class="video-modal-divider">
+            <p class="video-modal-copy">
+              © 2025 – All rights reserved.<br>
+              This content is created for motivational, educational, and
+              faith-based purposes. Certain material may be used under fair use.
+              If anything needs to be addressed, please contact us.
+            </p>
+            <hr class="video-modal-divider">
+            <p class="video-modal-copy">
+              This video does not replace professional medical or psychological help.<br>
+              If you are struggling deeply, seek guidance from trusted professionals
+              while continuing your faith journey.
+            </p>
+            <p class="video-modal-tags">
+              #god #christianity #christianmotivation #bible #purpose
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL VIDEO 2 -->
+<div class="modal fade" id="videoModal2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content video-modal-content">
+
+      <button type="button" class="modal-close-btn"
+              data-bs-dismiss="modal" aria-label="Cerrar">✕</button>
+
+      <div class="modal-body p-0">
+        <div class="row g-0">
+
+          <div class="col-lg-8 bg-black">
+            <div class="ratio ratio-16x9">
+              <iframe src="" id="iframe2" title="Video destacado"
+                      allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-4 video-modal-info">
+            <h5 class="video-modal-title">Video destacado</h5>
+            <p class="video-modal-channel">Marentes</p>
+            <p class="video-modal-desc">
+              Contenido de redes sociales y creación digital.
+            </p>
+            <hr class="video-modal-divider">
+            <p class="video-modal-copy">
+              © 2025 – All rights reserved.<br>
+              Contenido creado para fines creativos y de entretenimiento digital.
+            </p>
+            <p class="video-modal-tags">
+              #marentes #contenido #digital #gaming #creacion
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL VIDEO 3 -->
+<div class="modal fade" id="videoModal3" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content video-modal-content">
+
+      <button type="button" class="modal-close-btn"
+              data-bs-dismiss="modal" aria-label="Cerrar">✕</button>
+
+      <div class="modal-body p-0">
+        <div class="row g-0">
+
+          <div class="col-lg-8 bg-black">
+            <div class="ratio ratio-16x9">
+              <iframe src="" id="iframe3" title="God, I'm not okay."
+                      allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-4 video-modal-info">
+            <h5 class="video-modal-title">God, I'm not okay.</h5>
+            <p class="video-modal-channel">Yeshualetter · 04:33</p>
+            <p class="video-modal-desc">
+              Even when you can't carry yourself, He's carrying you.
+            </p>
+            <hr class="video-modal-divider">
+            <p class="video-modal-copy">
+              © 2025 – All rights reserved.<br>
+              This content is created for motivational, educational, and
+              faith-based purposes. Certain material may be used under fair use.
+              If anything needs to be addressed, please contact us.
+            </p>
+            <hr class="video-modal-divider">
+            <p class="video-modal-copy">
+              This video does not replace professional medical or psychological help.<br>
+              If you are struggling deeply, seek guidance from trusted professionals
+              while continuing your faith journey.
+            </p>
+            <p class="video-modal-tags">
+              #god #christianity #christianmotivation #bible #purpose
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCTOS -->
+<section id="productos" class="section-dark py-5">
+  <div class="container">
+
+    <h2 class="fw-bold text-center mb-5">Productos</h2>
+
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card wix-card h-100">
+          <img src="assets/img/camiseta 1.avif"
+               class="card-img-top" alt="Camiseta 1">
+          <div class="card-body text-center">
+            <h4 class="fw-bold">Camiseta Club de la Pelea</h4>
+            <p class="text-muted">$40.000 COP</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card wix-card h-100">
+          <img src="assets/img/camiseta 2.avif"
+               class="card-img-top" alt="Camiseta 2">
+          <div class="card-body text-center">
+            <h4 class="fw-bold">Camiseta Don't Sleep</h4>
+            <p class="text-muted">$40.000 COP</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card wix-card h-100">
+          <img src="assets/img/camiseta 3.avif"
+               class="card-img-top" alt="Camiseta 3">
+          <div class="card-body text-center">
+            <h4 class="fw-bold">Camiseta GoodFellas</h4>
+            <p class="text-muted">$40.000 COP</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card wix-card h-100">
+          <img src="assets/img/tenis.avif"
+               class="card-img-top" alt="Tenis deportivos">
+          <div class="card-body text-center">
+            <h4 class="fw-bold">Tenis deportivos</h4>
+            <p class="text-muted">$120.000 COP</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card wix-card h-100">
+          <img src="assets/img/leggins.avif"
+               class="card-img-top" alt="Leggins deportivos">
+          <div class="card-body text-center">
+            <h4 class="fw-bold">Leggins deportivos</h4>
+            <p class="text-muted">$90.000 COP</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="section py-5">
+  <div class="container">
+
+    <h2 class="fw-bold text-center mb-5">Nuestros Servicios</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card wix-card h-100">
+          <img src="assets/img/psicologia.avif"
+               class="card-img-top" alt="Psicología">
+          <div class="card-body">
+            <h4 class="fw-bold">Psicología</h4>
+            <p class="text-muted">Servicio orientado al bienestar emocional y mental, enfocado en mejorar hábitos, manejo del estrés, autoestima y crecimiento personal. Contamos con profesionales capacitados que brindan acompañamiento y orientación de manera cercana y profesional.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card wix-card h-100">
+          <img src="assets/img/acondicionamiento.avif"
+               class="card-img-top" alt="Acondicionamiento físico">
+          <div class="card-body">
+            <h4 class="fw-bold">Acondicionamiento físico</h4>
+            <p class="text-muted">Espacio enfocado en mejorar la condición física, la salud y el rendimiento mediante rutinas, hábitos saludables y seguimiento constante. Nuestros entrenadores y especialistas ayudan a desarrollar procesos adaptados a cada objetivo.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card wix-card h-100">
+          <img src="assets/img/asesoria.avif"
+               class="card-img-top" alt="Asesoría personalizada">
+          <div class="card-body">
+            <h4 class="fw-bold">Asesoría personalizada</h4>
+            <p class="text-muted">Acompañamiento individual diseñado según las necesidades de cada persona, ofreciendo orientación, seguimiento y estrategias personalizadas. El servicio es guiado por expertos comprometidos con el progreso y desarrollo de cada usuario.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contacto" class="bg-black text-center text-white py-4">
+  <p class="mb-1 fw-bold" style="letter-spacing: 2px;">MARENTES</p>
+  <p class="mb-1 small text-secondary">+57 321 448 1965 · marentesbrand@gmail.com</p>
+  <p class="mb-0 small text-secondary">Bogotá, Colombia</p>
+  <small class="text-secondary d-block mt-2">© 2026 Marentes</small>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const videos = [
+    { modal: 'videoModal1', iframe: 'iframe1', id: 'hhfsjvlyKKM' },
+    { modal: 'videoModal2', iframe: 'iframe2', id: '9Aq17woe_6M' },
+    { modal: 'videoModal3', iframe: 'iframe3', id: 'cgyccd9LZOk' },
+  ];
+
+  videos.forEach(({ modal, iframe, id }) => {
+    const modalEl = document.getElementById(modal);
+    modalEl.addEventListener('show.bs.modal', () => {
+      document.getElementById(iframe).src =
+        `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+    });
+    modalEl.addEventListener('hide.bs.modal', () => {
+      document.getElementById(iframe).src = '';
+    });
+  });
+</script>
+
+</body>
+</html>

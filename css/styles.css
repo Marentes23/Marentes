@@ -1,0 +1,261 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 70px;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ── NAVBAR ── */
+.navbar {
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.nav-link {
+  margin-left: 15px;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #bbbbbb !important;
+}
+
+/* ── HERO ── */
+.hero {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("../assets/img/portada.avif")
+    center/cover no-repeat;
+}
+
+/* ── SECCIONES ── */
+.section {
+  background: #ffffff;
+}
+
+.section-dark {
+  background: #0d0d0d;
+  color: white;
+}
+
+/* ── TITULOS ── */
+h1, h2, h3, h4, h5 {
+  letter-spacing: 1px;
+}
+
+/* ── BOTÓN HERO ── */
+.btn-outline-light {
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background: white;
+  color: black;
+}
+
+/* ── CARDS GENERALES ── */
+.wix-card {
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  background: #111;
+  color: white;
+}
+
+.wix-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+}
+
+/* ── IMÁGENES DE PRODUCTOS / SERVICIOS ── */
+.card-img-top {
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+  background: #000;
+  padding: 15px;
+}
+
+/* ── TEXTO MUTED ── */
+.text-muted {
+  color: #bdbdbd !important;
+}
+
+/* ── FOOTER ── */
+footer {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* ══════════════════════════════
+   VIDEO CARDS
+══════════════════════════════ */
+
+.video-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.3);
+}
+
+.video-thumb-img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  transition: filter 0.25s ease;
+}
+
+.video-card:hover .video-thumb-img {
+  filter: brightness(0.65);
+}
+
+.play-overlay {
+  background: rgba(0,0,0,0.25);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.video-card:hover .play-overlay {
+  opacity: 1;
+}
+
+.play-circle {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.92);
+  color: #000;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease;
+}
+
+.video-card:hover .play-circle {
+  transform: scale(1.12);
+}
+
+/* ══════════════════════════════
+   MODAL DE VIDEO
+══════════════════════════════ */
+
+.video-modal-content {
+  background: #0d0d0d;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  z-index: 10;
+  background: rgba(255,255,255,0.12);
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.modal-close-btn:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+.video-modal-info {
+  background: #0d0d0d;
+  padding: 48px 24px 24px 24px;
+  overflow-y: auto;
+}
+
+.video-modal-title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  letter-spacing: 0.3px;
+}
+
+.video-modal-channel {
+  color: #aaaaaa;
+  font-size: 0.82rem;
+  margin: 0 0 14px 0;
+}
+
+.video-modal-desc {
+  color: #cccccc;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0 0 8px 0;
+}
+
+.video-modal-divider {
+  border-color: #2a2a2a;
+  margin: 12px 0;
+}
+
+.video-modal-copy {
+  color: #888888;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  margin: 0 0 8px 0;
+}
+
+.video-modal-tags {
+  color: #666666;
+  font-size: 0.75rem;
+  margin: 8px 0 0 0;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .card-img-top {
+    height: 300px;
+  }
+
+  .play-circle {
+    width: 54px;
+    height: 54px;
+    font-size: 18px;
+  }
+
+  .video-modal-info {
+    padding: 20px 16px;
+  }
+}
